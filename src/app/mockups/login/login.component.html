@@ -1,1 +1,54 @@
-<p>login works!</p>
+<mat-card style="width: 380px;" class="centralize" >        
+    <header class="text-center">
+        <span class="mat-h1 display-block m-0">Welcome</span>
+        <span class="mat-h3 display-block m-0">Log in to continue services</span>
+    </header>
+
+    <div class="padding2030">
+        <div class="container-fluid user-banner">
+            <div fxFlex="40px" style="position: relative;">
+                <div class="profile-icon">
+                </div>
+            </div>
+            <div fxFlex class="p-2">
+                <span class="mat-h2 display-block m-0">Jhon Doe</span>
+                <span class="mat-small display-block m-0">@jhondoe</span>
+            </div>
+            <div fxFlex="35px" style="position: relative;">                    
+                <button mat-icon-button class="vertical-center trash"><fa-icon [icon]="faTrash" class="danger"></fa-icon></button>
+            </div>
+        </div>
+
+        <div class=" user-banner">
+            <div class="container-fluid">
+                <div fxFlex="40px" style="position: relative;">
+                    <div class="profile-icon">
+                    </div>
+                </div>
+                <div fxFlex class="p-2">
+                    <span class="mat-h2 display-block m-0">Jhon Doe</span>
+                    <span class="mat-small display-block m-0">@jhondoe</span>
+                </div>
+                <div fxFlex="35px" style="position: relative;">                    
+                    <button mat-icon-button class="vertical-center trash"><fa-icon [icon]="faTrash" class="danger"></fa-icon></button>
+                </div>
+            </div>
+            <div class="padding1015" style="border-top: 1px solid;">
+                <mat-form-field appearance="outline" class="w-100">
+                    <fa-icon [icon]="faKey" matPrefix></fa-icon>
+                    <fa-icon [icon]="faEye" matSuffix></fa-icon>
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password">                                                
+                </mat-form-field>
+
+                <div class="text-end">
+                    <button mat-raised-button color="primary">Log in as John Doe?</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button mat-stroked-button>Use another account</button>
+        </div>
+    </div>
+</mat-card>

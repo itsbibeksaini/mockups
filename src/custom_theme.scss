@@ -1,0 +1,23 @@
+.danger {
+  color: #f44336;
+}
+
+.mat-card {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22) !important;
+}
+
+.mat-form-field {
+  font-size: 16px;
+  & fa-icon {
+    font-size: 21px;
+    margin-right: 0.5rem;
+  }
+
+  & .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  & .mat-form-field-subscript-wrapper {
+    position: relative !important;
+  }
+}

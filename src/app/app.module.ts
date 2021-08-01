@@ -7,6 +7,11 @@ import { MockupHomeComponent } from './mockups/mockup-home/mockup-home.component
 import { LoginComponent } from './mockups/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {MatButtonModule} from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -18,6 +23,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
+    MatButtonModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
     FontAwesomeModule
   ],
   providers: [],
