@@ -1,3 +1,88 @@
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
+$theme-colors:(
+    "white": #f6f6f6,
+    "black": #1B1C1E,
+    "light-black": #424242,
+    "blue-500": #2196f3,
+    "blue-900": #0d47a1
+);
+
+$theme-dark:(
+    "combo-black-blue-500": map-get($map: $theme-colors, $key: "black"),    
+    "combo-black-blue-900": map-get($map: $theme-colors, $key: "black"),
+
+    "combo-white-black": map-get($map: $theme-colors, $key: "white"),
+    "combo-black-white": map-get($map: $theme-colors, $key: "black"),
+
+    "combo-white-blue-500": map-get($map: $theme-colors, $key: "white"),
+    "combo-white-blue-900": map-get($map: $theme-colors, $key: "white"),
+
+    "combo-white-light-black": map-get($map: $theme-colors, $key: "light-black")
+);
+
+$theme-light:(
+    "combo-black-blue-500": map-get($map: $theme-colors, $key: "blue-500"),
+    "combo-black-blue-900": map-get($map: $theme-colors, $key: "blue-900"),
+
+    "combo-white-black": map-get($map: $theme-colors, $key: "black"),
+    "combo-black-white": map-get($map: $theme-colors, $key: "white"),
+
+    "combo-white-blue-500": map-get($map: $theme-colors, $key: "blue-500"),
+    "combo-white-blue-900": map-get($map: $theme-colors, $key: "blue-900"),
+
+    "combo-white-light-black": map-get($map: $theme-colors, $key: "white")
+);
+
+
+$warn: mat.define-palette(mat.$red-palette);
+
+.light-theme{
+  // define a css variable for each theme color
+  @each $name, $color in $theme-light {
+    --#{$name}: #{$color};
+  }
+
+  $light-primary: mat.define-palette(mat.$blue-palette);
+  $light-accent: mat.define-palette(mat.$blue-palette, A500);
+
+  $light-theme: mat.define-light-theme((
+    color: (
+      primary: $light-primary,
+      accent: $light-accent,
+      warn: $warn
+    )
+  ));
+
+  @include mat.all-component-themes($light-theme);
+}
+
+.dark-theme{
+
+  // define a css variable for each theme color
+  @each $name, $color in $theme-dark {
+    --#{$name}: #{$color};
+  }
+
+  background-color: #1B1C1E;
+  $dark-primary: mat.define-palette(mat.$gray-palette, A100);
+  $dark-accent: mat.define-palette(mat.$gray-palette, A50);
+
+  $dark-theme: mat.define-dark-theme((
+    color:(
+      primary: $dark-primary,
+      accent: $dark-accent,
+      warn:$warn
+    )
+  ));
+
+  @include mat.all-component-themes($dark-theme);
+}
+
+
+
 .danger {
   color: #f44336;
 }
