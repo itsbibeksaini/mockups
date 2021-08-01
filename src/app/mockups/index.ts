@@ -1,0 +1,1 @@
+export {MockupHomeComponent} from './mockup-home/mockup-home.component'
