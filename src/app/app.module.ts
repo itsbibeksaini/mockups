@@ -12,12 +12,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { TaskboardsDashboardComponent } from './mockups/taskboards-dashboard/taskboards-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MockupHomeComponent,
-    LoginComponent
+    LoginComponent,
+    TaskboardsDashboardComponent
   ],
   imports: [
     BrowserModule,
