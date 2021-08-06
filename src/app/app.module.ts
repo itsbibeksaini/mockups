@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { TaskboardsDashboardComponent } from './mockups/taskboards-dashboard/taskboards-dashboard.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TaskboardsDashboardComponent } from './mockups/taskboards-dashboard/tas
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

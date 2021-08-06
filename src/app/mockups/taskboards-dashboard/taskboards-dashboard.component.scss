@@ -1,0 +1,28 @@
+@import "../../../_mixins.scss";
+
+table {
+  & th {
+    border-bottom: 1px solid;
+    padding: 20px 30px;
+  }
+
+  & tbody tr {
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      //   border: 1px solid red;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  & tbody td {
+    // border-left: 1px solid;
+    padding: 20px 30px;
+    margin: 0.5rem;
+  }
+}
+
+.initials {
+  @include initials(40px);
+}
