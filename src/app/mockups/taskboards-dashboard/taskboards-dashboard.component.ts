@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-taskboards-dashboard',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskboardsDashboardComponent implements OnInit {
 
+  faTrash = faTrash
+
+  dataSource = ["1","2","1","2","1","2","1","2"];
   constructor() { }
 
   ngOnInit(): void {

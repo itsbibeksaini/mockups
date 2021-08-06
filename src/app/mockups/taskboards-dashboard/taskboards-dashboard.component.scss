@@ -1,28 +1,75 @@
 @import "../../../_mixins.scss";
 
 table {
-  & th {
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: var(--combo-black-white);
+  & thead th {
     border-bottom: 1px solid;
-    padding: 20px 30px;
-  }
+    padding: 10px 15px;
 
-  & tbody tr {
-    cursor: pointer;
-    border-radius: 0.25rem;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      //   border: 1px solid red;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    &.board-selector {
+      width: 5%;
+    }
+
+    &.board-name {
+      width: 50%;
+    }
+
+    &.owner {
+      width: 20%;
+    }
+
+    &.created-on {
+      width: 10%;
+    }
+
+    &.status {
+      width: 10%;
+    }
+
+    &.delete-board {
+      width: 5%;
     }
   }
 
-  & tbody td {
-    // border-left: 1px solid;
-    padding: 20px 30px;
-    margin: 0.5rem;
-  }
-}
+  & tbody {
+    & td {
+      //   border: 1px solid;
+      padding: 10px 15px;
+      // border-left: 1px solid;
 
-.initials {
-  @include initials(40px);
+      & .porfile-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #64b5f6;
+        text-align: center;
+
+        .initials {
+          @include initials(40px);
+        }
+      }
+
+      & button.delete-button,
+      .board-check-box {
+        color: #f44336;
+        visibility: hidden;
+      }
+    }
+
+    & tr {
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      border-radius: 0.25rem;
+      &:hover {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22) !important;
+        & .delete-button,
+        .board-check-box {
+          visibility: visible;
+        }
+      }
+    }
+  }
 }

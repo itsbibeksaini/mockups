@@ -4,5 +4,55 @@
             <span class="mat-display-1">TaskBoards</span>
             <hr>
         </header>
+        <div class="padding1015">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="board-selector position-relative">
+                            <mat-checkbox color="primary" class="centralize board-check-box"></mat-checkbox>
+                        </th>
+                        <th class="board-name">Borad</th>
+                        <th class="owner">Owner</th>
+                        <th class="created-on">Created On</th>
+                        <th class="status">Status</th>
+                        <th class="delete-board"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let d of dataSource">
+                        <td class="position-relative">
+                            <mat-checkbox color="primary" class="centralize board-check-box"></mat-checkbox>
+                        </td>
+                        <td>
+                            <span class="mat-h1 display-block m-0">Title of the TaskBoard</span>
+                            <span class="mat-small display-block m-0">Description of the TaskBoard</span>
+                        </td>
+                        <td>
+                            <div class="container-fluid p-0" fxLayoutGap="10px">
+                                <div fxFlex="40px" class="position-relative">
+                                    <div class="porfile-icon centralize">
+                                        <span class="initials">JD</span>
+                                    </div>
+                                </div>
+                                <div fxFlex>
+                                    <span class="mat-h1 display-block m-0">John Doe</span>
+                                    <span class="mat-small display-block m-0">@johndoe</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            August, 06 2021
+                        </td>
+
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            <button mat-icon-button class="delete-button"><fa-icon [icon]="faTrash"></fa-icon></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </mat-card>
 </div>
