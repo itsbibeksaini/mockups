@@ -15,13 +15,16 @@ import {MatInputModule} from '@angular/material/input';
 import { TaskboardsDashboardComponent } from './mockups/taskboards-dashboard/taskboards-dashboard.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { ProfileViewComponent } from './mockups/profile-view/profile-view.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
     AppComponent,
     MockupHomeComponent,
     LoginComponent,
-    TaskboardsDashboardComponent
+    TaskboardsDashboardComponent,
+    ProfileViewComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatInputModule,
     FontAwesomeModule,
     MatTableModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

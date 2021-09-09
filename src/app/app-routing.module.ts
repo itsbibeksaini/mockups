@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent, MockupHomeComponent } from './mockups';
+import { ProfileViewComponent } from './mockups/profile-view/profile-view.component';
 import { TaskboardsDashboardComponent } from './mockups/taskboards-dashboard/taskboards-dashboard.component';
 
 const routes: Routes = [{
@@ -12,6 +13,9 @@ const routes: Routes = [{
 },{
   path:'taskboards-dashboard',
   component: TaskboardsDashboardComponent
+},{
+  path:'profile-view',
+  component: ProfileViewComponent
 }];
 
 @NgModule({
