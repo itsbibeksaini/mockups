@@ -17,6 +17,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ProfileViewComponent } from './mockups/profile-view/profile-view.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { AccountDetailsComponent } from './mockups/profile-view/account-details/account-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MockupHomeComponent,
     LoginComponent,
     TaskboardsDashboardComponent,
-    ProfileViewComponent
+    ProfileViewComponent,
+    AccountDetailsComponent
   ],
   imports: [
     BrowserModule,

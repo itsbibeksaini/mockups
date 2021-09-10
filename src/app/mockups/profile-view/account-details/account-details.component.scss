@@ -1,0 +1,18 @@
+.profile-field {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border-color: var(--combo-white-blue-500);
+    & .edit-icon {
+      display: block;
+    }
+  }
+
+  & .edit-icon {
+    display: none;
+  }
+}
