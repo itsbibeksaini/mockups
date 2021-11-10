@@ -1,72 +1,27 @@
-<!-- <div class="container-fluid padding2030" style="width: 800px;">                    
-    <div class="row">
-        <div class="col-12 profile-field">
-            <header>
-                <span class="mat-h2">Username</span>
-            </header>
-            <div>
-                <span class="mat-small">johndoe</span>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4 profile-field">
-            <header>
-                <span class="mat-h2">First name</span>
-            </header>
-            <div>
-                <span class="mat-small">John</span>
-            </div>
-        </div>
-        <div class="col-4 profile-field">
-            <header>
-                <span class="mat-h2">Middle name</span>
-            </header>
-            <div>
-                <span class="mat-small"></span>
-            </div>
-        </div>
-        <div class="col-4 profile-field container-fluid">
-            <div fxFlex>
-                <header>
-                    <span class="mat-h2">Last name</span>
-                </header>
-                <div>
-                    <span class="mat-small">Doe</span>
-                </div>
-            </div>
-            <div fxFlex="35px" class="position-relative">
-                <button mat-icon-button class="centralize edit-icon">
-                    <fa-icon [icon]="faPencilAlt" style="font-size: 21px;"></fa-icon>
-                </button>
-            </div>                            
-        </div>
-        
-    </div>
-</div>   -->
-
-<div class="container-fluid padding2030" style="width: 800px;">
-    <div class="row">
-        <div class="col-12 profile-field">
+<div class="container-fluid mt-3" style="max-width: 800px;">
+    <div class="row p-1">
+        <div class="col-12 profile-field" style="color: #999;">
             <div class="container-fluid p-0">
                 <div fxFlex>
                     <header>
-                        <span class="mat-h2">Username</span>
+                        <span class="mat-small">Username</span>
                     </header>
                     <div>
-                        <span class="mat-small">johndoe</span>
+                        <span class="mat-h2">johndoe</span>
                     </div>
                 </div>                
             </div>
-        </div>
+        </div>        
+    </div>
+    <div class="row p-1">
         <div class="col-4 profile-field">
             <div class="container-fluid p-0">
                 <div fxFlex>
                     <header>
-                        <span class="mat-h2">First name</span>
+                        <span class="mat-small">First name</span>
                     </header>
                     <div>
-                        <span class="mat-small">Doe</span>
+                        <span class="mat-h2">Doe</span>
                     </div>
                 </div>
                 <div fxFlex="35px" class="position-relative">
@@ -80,10 +35,10 @@
             <div class="container-fluid p-0">
                 <div fxFlex>
                     <header>
-                        <span class="mat-h2">Middle name</span>
+                        <span class="mat-small">Middle name</span>
                     </header>
                     <div>
-                        <span class="mat-small"></span>
+                        <span class="mat-h2"></span>
                     </div>
                 </div>
                 <div fxFlex="35px" class="position-relative">
@@ -97,10 +52,29 @@
             <div class="container-fluid p-0">
                 <div fxFlex>
                     <header>
-                        <span class="mat-h2">Last name</span>
+                        <span class="mat-small">Last name</span>
                     </header>
                     <div>
-                        <span class="mat-small">Doe</span>
+                        <span class="mat-h2">Doe</span>
+                    </div>
+                </div>
+                <div fxFlex="35px" class="position-relative">
+                    <button mat-icon-button class="centralize edit-icon">
+                        <fa-icon [icon]="faPencilAlt" style="font-size: 21px;"></fa-icon>
+                    </button>
+                </div> 
+            </div>
+        </div>        
+    </div>
+    <div class="row p-1">
+        <div class="col-4 profile-field">
+            <div class="container-fluid p-0">
+                <div fxFlex>
+                    <header>
+                        <span class="mat-small">Phone number</span>
+                    </header>
+                    <div>
+                        <span class="mat-h2">+91 9876543210</span>
                     </div>
                 </div>
                 <div fxFlex="35px" class="position-relative">
@@ -111,16 +85,18 @@
             </div>
         </div>
         <div class="col-4 profile-field">
-            <div class="container-fluid p-0">
-                <div fxFlex>
+            <div class="container-fluid p-0 ">
+                <div fxFlex="200px">
                     <header>
-                        <span class="mat-h2">Phone number</span>
+                        <span class="mat-small">E-Mail</span>
                     </header>
-                    <div>
-                        <span class="mat-small">+91 9876543210</span>
+                    <div style="white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;" class="w-100" >
+                        <span class="mat-h2">johndoed4fs45dsf4545dsf@gmail.com</span>
                     </div>
                 </div>
-                <div fxFlex="35px" class="position-relative">
+                <div fxFlex class="position-relative">
                     <button mat-icon-button class="centralize edit-icon">
                         <fa-icon [icon]="faPencilAlt" style="font-size: 21px;"></fa-icon>
                     </button>
@@ -131,27 +107,10 @@
             <div class="container-fluid p-0">
                 <div fxFlex>
                     <header>
-                        <span class="mat-h2">E-Mail</span>
+                        <span class="mat-small">Language</span>
                     </header>
                     <div>
-                        <span class="mat-small">johndoe@gmail.com</span>
-                    </div>
-                </div>
-                <div fxFlex="35px" class="position-relative">
-                    <button mat-icon-button class="centralize edit-icon">
-                        <fa-icon [icon]="faPencilAlt" style="font-size: 21px;"></fa-icon>
-                    </button>
-                </div> 
-            </div>
-        </div>
-        <div class="col-4 profile-field">
-            <div class="container-fluid p-0">
-                <div fxFlex>
-                    <header>
-                        <span class="mat-h2">Language</span>
-                    </header>
-                    <div>
-                        <span class="mat-small">English</span>
+                        <span class="mat-h2">English</span>
                     </div>
                 </div>
                 <div fxFlex="35px" class="position-relative">

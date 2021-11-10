@@ -23,15 +23,24 @@
       height: 160px;
       border-radius: 50%;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
-      background-color: white;
+      background-color: var(--combo-white-blue-500);
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       top: 200px;
+      text-align: center;
+
+      & .initials {
+        color: #1B1C1E;
+        font-size: 80px; /* 50% of parent */
+        line-height: 1;
+        position: relative;
+        top: 40px; /* 25% of parent */
+      }
 
       &::before {
         content: "";
-        border: 3px solid;
+        border: 3px solid #1B1C1E;
         position: absolute;
         left: 0;
         right: 0;
